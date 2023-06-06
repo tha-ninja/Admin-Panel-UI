@@ -1,0 +1,482 @@
+<!DOCTYPE html><!-- saved from url=(0014)about:internet -->
+<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light"
+data-menu-styles="dark" data-toggled="close">
+
+<head><!-- Meta Data -->
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Orders | PrimeWriters</title>
+
+<link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+<script src="../assets/libs/choices.js/public/assets/scripts/choices.min.js"></script> <!-- Main Theme Js -->
+<script src="../assets/js/main.js"></script> <!-- Bootstrap Css -->
+<link id="style" href="../assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!-- Style Css -->
+<link href="../assets/css/styles.min.css" rel="stylesheet"> <!-- Icons Css -->
+<link href="../assets/css/icons.css" rel="stylesheet"> <!-- Node Waves Css -->
+<link href="../assets/libs/node-waves/waves.min.css" rel="stylesheet"> <!-- Simplebar Css -->
+<link href="../assets/libs/simplebar/simplebar.min.css" rel="stylesheet"> <!-- Color Picker Css -->
+<link rel="stylesheet" href="../assets/libs/flatpickr/flatpickr.min.css">
+<link rel="stylesheet" href="../assets/libs/@simonwep/pickr/themes/nano.min.css"> <!-- Choices Css -->
+<link rel="stylesheet" href="../assets/libs/choices.js/public/assets/styles/choices.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.3.0/remixicon.css" integrity="sha512-0JEaZ1BDR+FsrPtq5Ap9o05MUwn8lKs2GiCcRVdOH0qDcUcCoMKi8fDVJ9gnG8VN1Mp/vuWw2sMO0SQom5th4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body><!-- Start Switcher -->
+
+<div class="page"> <!-- app-header -->
+<header class="app-header"> <!-- Start::main-header-container -->
+<div class="main-header-container container-fluid"> <!-- Start::header-content-left -->
+    <div class="header-content-left"> <!-- Start::header-element -->
+        <div class="header-element">
+            <div class="horizontal-logo"> <a href="index.html" class="header-logo"> <img
+                        src="../assets/images/brand-logos/desktop-logo.png" alt="logo" class="desktop-logo">
+                    <img src="../assets/images/brand-logos/toggle-logo.png" alt="logo" class="toggle-logo">
+                    <img src="../assets/images/brand-logos/desktop-dark.png" alt="logo"
+                        class="desktop-dark"> <img src="../assets/images/brand-logos/toggle-dark.png"
+                        alt="logo" class="toggle-dark"> </a> </div>
+        </div> <!-- End::header-element --> <!-- Start::header-element -->
+        <div class="header-element"> <!-- Start::header-link --> <a aria-label="Hide Sidebar"
+                class="sidemenu-toggle header-link animated-arrow hor-toggle horizontal-navtoggle"
+                data-bs-toggle="sidebar" href="javascript:void(0);"><span></span></a>
+            <!-- End::header-link --> </div> <!-- End::header-element -->
+    </div> <!-- End::header-content-left --> <!-- Start::header-content-right -->
+    <div class="header-content-right"> <!-- Start::header-element -->
+        <div class="header-element header-search"> <!-- Start::header-link --> <a href="javascript:void(0);"
+                class="header-link" data-bs-toggle="modal" data-bs-target="#searchModal"> <i
+                    class="bx bx-search-alt-2 header-link-icon"></i> </a> <!-- End::header-link --> </div>
+        <!-- End::header-element --> <!-- Start::header-element -->
+
+
+
+        <div class="header-element notifications-dropdown"> <!-- Start::header-link|dropdown-toggle --> <a
+                href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-toggle="dropdown"
+                data-bs-auto-close="outside" id="messageDropdown" aria-expanded="false"> <i
+                    class="bx bx-bell header-link-icon"></i> <span
+                    class="badge bg-secondary rounded-pill header-icon-badge pulse pulse-secondary"
+                    id="notification-icon-badge">5</span> </a> <!-- End::header-link|dropdown-toggle -->
+            <!-- Start::main-header-dropdown -->
+            <div class="main-header-dropdown dropdown-menu dropdown-menu-end" data-popper-placement="none">
+                <div class="p-3">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="mb-0 fs-17 fw-semibold">Notifications</p><span
+                            class="badge bg-secondary-transparent" id="notifiation-data">5 Unread</span>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <ul class="list-unstyled mb-0" id="header-notification-scroll">
+                    <li class="dropdown-item">
+                        <div class="d-flex align-items-start">
+                            <div class="pe-2"> <span
+                                    class="avatar avatar-md bg-primary-transparent avatar-rounded"><i
+                                        class="ti ti-gift fs-18"></i></span> </div>
+                            <div class="flex-grow-1 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <p class="mb-0 fw-semibold"><a href="notifications.html">Your Order Has
+                                            Been Shipped</a></p><span
+                                        class="text-muted fw-normal fs-12 header-notification-text">Order
+                                        No: 123456 Has Shipped To Your Delivery Address</span>
+                                </div>
+                                <div> <a href="javascript:void(0);"
+                                        class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i
+                                            class="ti ti-x fs-16"></i></a> </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-item">
+                        <div class="d-flex align-items-start">
+                            <div class="pe-2"> <span
+                                    class="avatar avatar-md bg-secondary-transparent avatar-rounded"><i
+                                        class="ti ti-discount-2 fs-18"></i></span> </div>
+                            <div class="flex-grow-1 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <p class="mb-0 fw-semibold"><a href="notifications.html">Discount
+                                            Available</a></p><span
+                                        class="text-muted fw-normal fs-12 header-notification-text">Discount
+                                        Available On Selected Products</span>
+                                </div>
+                                <div> <a href="javascript:void(0);"
+                                        class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i
+                                            class="ti ti-x fs-16"></i></a> </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-item">
+                        <div class="d-flex align-items-start">
+                            <div class="pe-2"> <span
+                                    class="avatar avatar-md bg-pink-transparent avatar-rounded"><i
+                                        class="ti ti-user-check fs-18"></i></span> </div>
+                            <div class="flex-grow-1 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <p class="mb-0 fw-semibold"><a href="notifications.html">Account Has
+                                            Been Verified</a></p><span
+                                        class="text-muted fw-normal fs-12 header-notification-text">Your
+                                        Account Has Been Verified Sucessfully</span>
+                                </div>
+                                <div> <a href="javascript:void(0);"
+                                        class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i
+                                            class="ti ti-x fs-16"></i></a> </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-item">
+                        <div class="d-flex align-items-start">
+                            <div class="pe-2"> <span
+                                    class="avatar avatar-md bg-warning-transparent avatar-rounded"><i
+                                        class="ti ti-circle-check fs-18"></i></span> </div>
+                            <div class="flex-grow-1 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <p class="mb-0 fw-semibold"><a href="notifications.html">Order Placed
+                                            <span class="text-warning">ID: #1116773</span></a></p><span
+                                        class="text-muted fw-normal fs-12 header-notification-text">Order
+                                        Placed Successfully</span>
+                                </div>
+                                <div> <a href="javascript:void(0);"
+                                        class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i
+                                            class="ti ti-x fs-16"></i></a> </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-item">
+                        <div class="d-flex align-items-start">
+                            <div class="pe-2"> <span
+                                    class="avatar avatar-md bg-success-transparent avatar-rounded"><i
+                                        class="ti ti-clock fs-18"></i></span> </div>
+                            <div class="flex-grow-1 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <p class="mb-0 fw-semibold"><a href="notifications.html">Order Delayed
+                                            <span class="text-success">ID: 7731116</span></a></p><span
+                                        class="text-muted fw-normal fs-12 header-notification-text">Order
+                                        Delayed Unfortunately</span>
+                                </div>
+                                <div> <a href="javascript:void(0);"
+                                        class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i
+                                            class="ti ti-x fs-16"></i></a> </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="p-3 empty-header-item1 border-top">
+                    <div class="d-grid"> <a href="notifications.html" class="btn btn-primary">View All</a>
+                    </div>
+                </div>
+                <div class="p-5 empty-item1 d-none">
+                    <div class="text-center"> <span
+                            class="avatar avatar-xl avatar-rounded bg-secondary-transparent"> <i
+                                class="ri-notification-off-line fs-2"></i> </span>
+                        <h6 class="fw-semibold mt-3">No New Notifications</h6>
+                    </div>
+                </div>
+            </div> <!-- End::main-header-dropdown -->
+        </div> <!-- End::header-element --> <!-- Start::header-element -->
+
+
+        <div class="header-element"> <!-- Start::header-link|dropdown-toggle --> <a href="#"
+                class="header-link dropdown-toggle" id="mainHeaderProfile" data-bs-toggle="dropdown"
+                data-bs-auto-close="outside" aria-expanded="false">
+                <div class="d-flex align-items-center">
+                    <div class="me-sm-2 me-0"> <img src="../assets/images/faces/9.jpg" alt="img" width="32"
+                            height="32" class="rounded-circle"> </div>
+                    <div class="d-sm-block d-none">
+                        <p class="fw-semibold mb-0 lh-1">PrimeWriters</p>
+                    </div>
+                </div>
+            </a> <!-- End::header-link|dropdown-toggle -->
+            <ul class="main-header-dropdown dropdown-menu pt-0 overflow-hidden header-profile-dropdown dropdown-menu-end"
+                aria-labelledby="mainHeaderProfile">
+                <li><a class="dropdown-item d-flex" href="profile.html"><i
+                            class="ti ti-user-circle fs-18 me-2 op-7"></i>Profile</a></li>
+                
+                <li><a class="dropdown-item d-flex" href="sign-in-cover.html"><i
+                            class="ti ti-logout fs-18 me-2 op-7"></i>Log Out</a></li>
+            </ul>
+        </div> <!-- End::header-element --> <!-- Start::header-element -->
+
+    </div> <!-- End::header-content-right -->
+</div> <!-- End::main-header-container -->
+</header> <!-- /app-header --> <!-- Start::app-sidebar -->
+<aside class="app-sidebar sticky" id="sidebar"> <!-- Start::main-sidebar-header -->
+<div class="main-sidebar-header"> <a href="dashboard.html" class="header-logo" style="color:var(--primary-color);"> Dashboard </a> </div>
+<!-- End::main-sidebar-header --> <!-- Start::main-sidebar -->
+<div class="main-sidebar" id="sidebar-scroll"> <!-- Start::nav -->
+    <nav class="main-menu-container nav nav-pills flex-column sub-open">
+        <div class="slide-left" id="slide-left"> <svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"
+                width="24" height="24" viewBox="0 0 24 24">
+                <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+            </svg> </div>
+        <ul class="main-menu"> <!-- Start::slide__category -->
+            <li class="slide__category"><span class="category-name">Main</span></li>
+            <!-- End::slide__category --> <!-- Start::slide -->
+            <li class="slide"> <a href="index.html" class="side-menu__item"> <i
+                        class="bx bx-store-alt side-menu__icon"></i> <span
+                        class="side-menu__label">Home</span> </a> </li> <!-- End::slide -->
+
+            <li class="slide"> <a href="inbox.html" class="side-menu__item"> <i
+                        class="bx bx-box side-menu__icon"></i> <span
+                        class="side-menu__label">Inbox</span> </a> </li> <!-- End::slide -->
+
+            <li class="slide__category"><span class="category-name">Orders</span></li>
+
+            <li class="slide"> <a href="pending-orders.html" class="side-menu__item"> <i
+                        class="bx bx-book-add side-menu__icon"></i> <span
+                        class="side-menu__label">Available</span> </a> </li> <!-- End::slide -->
+
+            <li class="slide"> <a href="progressed.html" class="side-menu__item"> <i
+                        class="bx bx-book-open side-menu__icon"></i> <span
+                        class="side-menu__label">Progressed</span> </a> </li> <!-- End::slide -->
+
+             <li class="slide"> <a href="late.html" class="side-menu__item"> <i
+                        class="bx bx-timer side-menu__icon"></i> <span class="side-menu__label">Late
+                        Orders</span> </a> </li> <!-- End::slide -->
+
+            <li class="slide"> <a href="#" class="side-menu__item"> <i
+                        class="bx bx-store-alt side-menu__icon"></i> <span class="side-menu__label">Closed
+                        Orders</span> </a> </li> <!-- End::slide -->
+ <li class="slide"> <a href="orders.html" class="side-menu__item"> <i
+                                    class="bx bx-book side-menu__icon"></i> <span
+                                    class="side-menu__label">All Orders</span> </a> </li> <!-- End::slide -->
+                                    
+        <li class="slide has-sub"> <a href="javascript:void(0);" class="side-menu__item"> <i
+            class="bx bxs-user-badge side-menu__icon"></i> <span class="side-menu__label">Users</span>
+        <i class="fe fe-chevron-right side-menu__angle"></i> </a>
+    <ul class="slide-menu child1">
+        <li class="slide side-menu__label1"> <a href="javascript:void(0)">Users</a> </li>
+        <li class="slide"> <a href="writers.html" class="side-menu__item">Writers</a>
+        </li>
+        <li class="slide"> <a href="" class="side-menu__item">Applications</a>
+        </li>
+        <li class="slide"> <a href="" class="side-menu__item">Admins</a>
+        </li>
+    </ul>
+</li> <!-- End::slide --> <!-- Start::slide__category -->
+
+<li class="slide has-sub"> <a href="javascript:void(0);" class="side-menu__item"> <i
+    class="bx bx-money side-menu__icon"></i> <span class="side-menu__label">Payments</span>
+<i class="fe fe-chevron-right side-menu__angle"></i> </a>
+<ul class="slide-menu child1">
+<li class="slide side-menu__label1"> <a href="javascript:void(0)">Payments</a> </li>
+<li class="slide"> <a href="" class="side-menu__item">Writers</a>
+</li>
+<li class="slide"> <a href="" class="side-menu__item">Support</a>
+</li>
+<li class="slide"> <a href="" class="side-menu__item">Advance</a>
+</li>
+<li class="slide"> <a href="" class="side-menu__item">Stats</a>
+</li>
+</ul>
+</li> <!-- End::slide --> <!-- Start::slide__category -->
+
+<li class="slide"> <a href="#" class="side-menu__item"> <i
+    class="bx bx-money-withdraw side-menu__icon"></i> <span class="side-menu__label">My Earnings</span> </a> </li> <!-- End::slide -->
+
+    <li class="slide"> <a href="#" class="side-menu__item"> <i
+        class="bx bx-building-house side-menu__icon"></i> <span class="side-menu__label">Departments</span> </a> </li> <!-- End::slide -->
+
+        <li class="slide"> <a href="#" class="side-menu__item"> <i
+            class="bx bx-wallet side-menu__icon"></i> <span class="side-menu__label">Expenses</span> </a> </li> <!-- End::slide -->
+
+            <li class="slide has-sub"> <a href="javascript:void(0);" class="side-menu__item"> <i
+                class="bx bx-cog side-menu__icon"></i> <span class="side-menu__label">Config</span>
+            <i class="fe fe-chevron-right side-menu__angle"></i> </a>
+            <ul class="slide-menu child1">
+            <li class="slide side-menu__label1"> <a href="javascript:void(0)">Config</a> </li>
+            <li class="slide"> <a href="" class="side-menu__item">Config</a>
+            </li>
+            <li class="slide"> <a href="" class="side-menu__item">Canned Messages</a>
+            </li>
+            <li class="slide"> <a href="" class="side-menu__item">Writer Deadlines</a>
+            </li>
+            
+            </ul>
+            </li> <!-- End::slide --> <!-- Start::slide__category -->
+
+            <li class="slide"> <a href="#" class="side-menu__item"> <i
+                class="bx bx-chat side-menu__icon"></i> <span class="side-menu__label">Announcements</span> </a> </li> <!-- End::slide -->
+
+           
+        </ul>
+        <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"
+                width="24" height="24" viewBox="0 0 24 24">
+                <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+            </svg></div>
+    </nav> <!-- End::nav -->
+</div> <!-- End::main-sidebar -->
+</aside> <!-- End::app-sidebar --> <!-- Start::app-content -->
+
+<div class="main-content app-content">
+    <div class="container-fluid"> <!-- Page Header -->
+        <div class="d-md-flex d-block align-items-center justify-content-between my-4 page-header-breadcrumb">
+            <h1 class="page-title fw-semibold fs-18 mb-0">Orders</h1>
+            <div class="ms-md-1 ms-0">
+                <nav>
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Orders</li>
+                    </ol>
+                </nav>
+            </div>
+        </div> <!-- Page Header Close -->
+        <div class="container"> <!-- Start::row-1 -->
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card custom-card">
+                        <div class="card-header justify-content-between">
+                            <div class="card-title">All Orders </div>
+                            <div class="d-flex">
+                                <div class="me-3"> <input class="form-control form-control-sm" type="text"
+                                        placeholder="Search" aria-label=".form-control-sm example"> </div>
+                               
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table text-nowrap table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Order Code</th>
+                                            <th scope="col">Writer</th>
+                                            <th scope="col">Subject</th>
+                                            <th scope="col">Topic</th>
+                                            <th scope="col">Amount</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Order Deadline</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="fs-14 text-info"><a href="order-details.html"><span class="badge bg-secondary-transparent">Order number #FO82CCF166F08(RE442)</span></a></div>
+                                            </td>
+                                            <td>Mary Kihui</td>
+                                            <td> <span class="fw-semibold">Test</span> </td>
+                                            <td> Test </td>
+                                            <td> <span class="badge bg-success-transparent">KES 3,000.00</span> </td>
+                                            <td> <span class="">Active</span> </td>
+                                            <td> <span class="">1 day ago</span> </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>
+                                                <div class="fs-14 text-info"><a href="order-details.html"><span class="badge bg-secondary-transparent">Order number #FO82CCF166F08(RE442)</span></a></div>
+                                            </td>
+                                            <td>Mary Kihui</td>
+                                            <td> <span class="fw-semibold">Test</span> </td>
+                                            <td> Test </td>
+                                            <td> <span class="badge bg-success-transparent">KES 3,000.00</span> </td>
+                                            <td> <span class="">Active</span> </td>
+                                            <td> <span class="">1 day ago</span> </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex align-items-center">
+                                <div> Showing 5 Entries <i class="bi bi-arrow-right ms-2 fw-semibold"></i> </div>
+                                <div class="ms-auto">
+                                    <nav aria-label="Page navigation" class="pagination-style-4">
+                                        <ul class="pagination mb-0">
+                                            <li class="page-item disabled"> <a class="page-link"
+                                                    href="javascript:void(0);"> Prev </a> </li>
+                                            <li class="page-item active"><a class="page-link"
+                                                    href="javascript:void(0);">1</a></li>
+                                            <li class="page-item"><a class="page-link"
+                                                    href="javascript:void(0);">2</a></li>
+                                            <li class="page-item"> <a class="page-link text-primary"
+                                                    href="javascript:void(0);"> next </a> </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End:: row-2 -->
+        </div>
+    </div>
+</div> <!-- End::app-content -->
+
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModal" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <div class="input-group"> <a href="javascript:void(0);" class="input-group-text"
+                    id="Search-Grid"><i class="fe fe-search header-link-icon fs-18"></i></a> <input
+                    type="search" class="form-control border-0 px-2" placeholder="Search"
+                    aria-label="Username"> <a href="javascript:void(0);" class="input-group-text"
+                    id="voice-search"><i class="fe fe-mic header-link-icon"></i></a> <a
+                    href="javascript:void(0);" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
+                    aria-expanded="false"> <i class="fe fe-more-vertical"></i> </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <p class="font-weight-semibold text-muted mb-2">Are You Looking For...</p><span
+                    class="search-tags"><i class="fe fe-user me-2"></i>People<a href="javascript:void(0)"
+                        class="tag-addon"><i class="fe fe-x"></i></a></span> <span class="search-tags"><i
+                        class="fe fe-file-text me-2"></i>Pages<a href="javascript:void(0)"
+                        class="tag-addon"><i class="fe fe-x"></i></a></span> <span class="search-tags"><i
+                        class="fe fe-align-left me-2"></i>Articles<a href="javascript:void(0)"
+                        class="tag-addon"><i class="fe fe-x"></i></a></span> <span class="search-tags"><i
+                        class="fe fe-server me-2"></i>Tags<a href="javascript:void(0)" class="tag-addon"><i
+                            class="fe fe-x"></i></a></span>
+            </div>
+            <div class="my-4">
+                <p class="font-weight-semibold text-muted mb-2">Recent Search :</p>
+                <div class="p-2 border br-5 d-flex align-items-center text-muted mb-2 alert"> <a
+                        href="notifications.html"><span>Notifications</span></a> <a class="ms-auto lh-1"
+                        href="javascript:void(0);" data-bs-dismiss="alert" aria-label="Close"><i
+                            class="fe fe-x text-muted"></i></a> </div>
+                <div class="p-2 border br-5 d-flex align-items-center text-muted mb-2 alert"> <a
+                        href="alerts.html"><span>Alerts</span></a> <a class="ms-auto lh-1"
+                        href="javascript:void(0);" data-bs-dismiss="alert" aria-label="Close"><i
+                            class="fe fe-x text-muted"></i></a> </div>
+                <div class="p-2 border br-5 d-flex align-items-center text-muted mb-0 alert"> <a
+                        href="mail.html"><span>Mail</span></a> <a class="ms-auto lh-1"
+                        href="javascript:void(0);" data-bs-dismiss="alert" aria-label="Close"><i
+                            class="fe fe-x text-muted"></i></a> </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-group ms-auto"> <button class="btn btn-sm btn-primary-light">Search</button>
+                <button class="btn btn-sm btn-primary">Clear Recents</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div> <!-- Footer Start -->
+
+<footer class="footer mt-auto py-3 bg-white text-center">
+<div class="container"> <span class="text-muted"> Copyright © <span id="year"></span> <a
+            href="javascript:void(0);" class="text-dark fw-semibold">Primewritersinc</a>. Designed with <span
+            class="bi bi-heart-fill text-danger"></span> by <a href="javascript:void(0);"> <span
+                class="fw-semibold text-primary text-decoration-underline">Symatechlabs Ltd</span> </a> All rights
+        reserved </span> </div>
+</footer> <!-- Footer End -->
+</div>
+<div class="scrollToTop"> <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span> </div>
+<div id="responsive-overlay"></div> <!-- Popper JS -->
+<script src="../assets/libs/@popperjs/core/umd/popper.min.js"></script> <!-- Bootstrap JS -->
+<script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Defaultmenu JS -->
+<script src="../assets/js/defaultmenu.min.js"></script> <!-- Node Waves JS-->
+<script src="../assets/libs/node-waves/waves.min.js"></script> <!-- Sticky JS -->
+<script src="../assets/js/sticky.js"></script> <!-- Simplebar JS -->
+<script src="../assets/libs/simplebar/simplebar.min.js"></script>
+<script src="../assets/js/simplebar.js"></script> <!-- Color Picker JS -->
+<script src="../assets/libs/@simonwep/pickr/pickr.es5.min.js"></script> <!-- Apex Charts JS -->
+<script src="../assets/libs/apexcharts/apexcharts.min.js"></script> <!-- Ecommerce-Dashboard JS -->
+<script src="../assets/js/ecommerce-dashboard.js"></script> <!-- Custom-Switcher JS -->
+<script src="../assets/js/custom-switcher.min.js"></script> <!-- Custom JS -->
+<script src="../assets/js/custom.js"></script>
+</body>
+
+</html>
